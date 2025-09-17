@@ -109,6 +109,21 @@ Task:
    in each block so you can see the flow of control.
 */
 
+function firstItem(array) {
+    if (!Array.isArray(array) || array.length === 0) {
+        throw new Error("Array must be non-empty.");
+    }
+    return array[0];
+}
+
+try {
+    const x = firstItem([]);   // This will throw
+} catch (e) {
+    console.log("Array is empty")
+} finally {
+    console.log("End of function's try block")
+}
+
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
 // ===================================================================================
