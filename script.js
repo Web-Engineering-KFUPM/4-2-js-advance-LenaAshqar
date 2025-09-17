@@ -64,7 +64,7 @@ Task:
 
 str = "LenaAshqar";
 for (const letter in str) {
-    console.log(letter);
+    console.log(str[letter]);
 }
 console.log(str.length);
 
