@@ -31,12 +31,18 @@ const Student = {
         return this.firstName + " " + this.lastName;
     },
 
-    set gpa(value) {
+    set setGpa(value) {
         if (value >=0 && value <= 4) {
             this.gpa = value;
         }
     }
 }
+
+console.log("To-Do 1");
+console.log(Student.fullName);
+console.log(Student.gpa);
+Student.setGpa = 3.9;
+console.log(Student.gpa);
 
 // ====================================
 // TODO-2: OBJECT AS MAP + for...in LOOP
@@ -47,6 +53,7 @@ Task:
 2) Iterate over it with for...in and display each key and value.
 */
 
+console.log("To-Do 2");
 const courseTitles = { SWE363: "Web Development", ICS344: "Information Security" };
 
 for (const key in courseTitles) {
@@ -62,9 +69,10 @@ Task:
 2) Use .charAt(index) and .length to output characters and size.
 */
 
+console.log("To-Do 3");
 str = "LenaAshqar";
-for (const letter in str) {
-    console.log(str.charAt(letter));
+for (const index in str) {
+    console.log(str.charAt(index));
 }
 console.log(str.length);
 
@@ -79,6 +87,7 @@ Task:
 //    (Hint: getDate(), getMonth(), getFullYear() )
 */
 
+console.log("To-Do 4");
 const d = new Date();
 console.log(d.getDate());
 console.log(d.getMonth() + 1);
@@ -94,9 +103,13 @@ Task:
 3) Display both values.
 */
 
+console.log("To-Do 5");
 const numbers = [-363, 433, -201 , 353, 10, 9, 5, 4, 2, 1]
 const minimum = Math.min(...numbers);
 const maximum = Math.max(...numbers);
+
+console.log(minimum);
+console.log(maximum);
 
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
@@ -109,6 +122,7 @@ Task:
    in each block so you can see the flow of control.
 */
 
+console.log("To-Do 6");
 function returnMax(array) {
     if (!Array.isArray(array) || array.length === 0) {
         throw new Error("Array must be non-empty.");
@@ -138,6 +152,7 @@ Given: const words = ["ban", "babble", "make", "flab"];
 4) Display the words that matches the pattern.
 */
 
+console.log("To-Do 7");
 const words = ["ban", "babble", "make", "flab"];
 const re = /ab/;
 
