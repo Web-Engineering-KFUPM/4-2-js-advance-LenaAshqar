@@ -94,6 +94,10 @@ Task:
 3) Display both values.
 */
 
+const numbers = [-363, 433, -201 , 353]
+const minimum = Math.min(...numbers);
+const maximum = Math.max(...numbers);
+
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
 // ===================================================================
