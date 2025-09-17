@@ -62,6 +62,13 @@ Task:
 2) Use .charAt(index) and .length to output characters and size.
 */
 
+str = "LenaAshqar";
+for (const letter in str) {
+    console.log(letter);
+}
+console.log(str.length);
+
+
 // ===================================
 // TODO-4: DATE — day, month, and year
 // ===================================
