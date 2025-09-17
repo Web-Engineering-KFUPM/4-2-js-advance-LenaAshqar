@@ -94,7 +94,7 @@ Task:
 3) Display both values.
 */
 
-const numbers = [-363, 433, -201 , 353]
+const numbers = [-363, 433, -201 , 353, 10, 9, 5, 4, 2, 1]
 const minimum = Math.min(...numbers);
 const maximum = Math.max(...numbers);
 
@@ -109,15 +109,17 @@ Task:
    in each block so you can see the flow of control.
 */
 
-function firstItem(array) {
+function returnMax(array) {
     if (!Array.isArray(array) || array.length === 0) {
         throw new Error("Array must be non-empty.");
     }
-    return array[0];
+    return Math.max(...array);
 }
 
 try {
-    const x = firstItem([]);   // This will throw
+    const y = returnMax([1, 4, 6, 9]);
+    console.log(y);
+    const x = returnMax([]);   // This will throw
 } catch (e) {
     console.log("Array is empty")
 } finally {
